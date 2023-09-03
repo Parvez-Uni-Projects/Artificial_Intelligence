@@ -1,3 +1,11 @@
+
+
+# Training Examples
+
+
+![Alt text](image-1.png)
+
+
 ```mermaid
 
 
@@ -52,6 +60,47 @@ tempNo([No])
 
 
 
+
+
+```
+
+# Training Examples
+
+![Alt text](image-2.png)
+
+
+A Decision Tree for “buys_computer”
+
+
+```mermaid
+graph TD
+
+age --> A[<=30]
+age --> B[31....40]
+age --> C[>40]
+
+
+A --> Student
+Student --> Yes
+Student --> No
+
+Yes --> studentYes
+No --> studentNo
+
+B --> betWeen31And40
+
+C --> D[Credit rating]
+D --> E[Excellent]
+D --> F[Fair]
+
+E --> creditExcellentNO
+F --> creditFairYes
+
+betWeen31And40([Yes])
+creditExcellentNO([NO])
+creditFairYes([Yes])
+studentYes([Yes])
+studentNo([No])
 
 
 ```
