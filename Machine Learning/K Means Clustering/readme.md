@@ -23,8 +23,8 @@ flowchart TD
     findCentroid --> D[Distance Objects to Centroids]
     D --> E[Clutering based on minimum distance]
      E --> check_movement
-    check_movement --> end_
-    check_movement --> findCentroid
+    check_movement -->|NO| end_
+    check_movement -->|Yes| findCentroid
 
     numberOfCluster[Number of Clusters K]
     findCentroid[Centroids]
