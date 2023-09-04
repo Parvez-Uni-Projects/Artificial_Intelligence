@@ -1,13 +1,26 @@
 
 
+
+
+
+# Formulas 
+## Entropy(S) = - (p+ * log2(p+)) - (p- * log2(p-))
+
+p+ = probability of positive examples in S
+
+p- = probability of negative examples in S
+## Gain (S , A) =  Entropy(S) - SumOf ( Entropy(Sv) * |Sv| / |S| )
+
+Entropy(Sv) = Entropy of subset Sv
+
+|Sv| = number of elements in subset Sv
+
+|S| = number of elements in set S
+
 # Training Examples
 
 
 ![Alt text](image-1.png)
-
-
-
-
 
 ## Entropy Calculation: 
 Number of “Yes” in play tennis = 9
