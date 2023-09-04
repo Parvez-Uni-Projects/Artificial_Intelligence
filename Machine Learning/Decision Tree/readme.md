@@ -1,8 +1,3 @@
-
-
-
-
-
 # Formulas 
 ## Entropy(S) = - (p+ * log2(p+)) - (p- * log2(p-))
 
